@@ -1,0 +1,6 @@
+{
+  "name": "CubeNet Lab",
+  "description": "Precision Rubik's Cube photo recognition and mathematically verified 2D unfolded state reconstruction.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

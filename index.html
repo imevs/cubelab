@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>CubeNet Lab — Rubik's Cube Photo Recognition & 2D Layout</title>
+    <meta name="description" content="Precision Rubik's Cube photo recognition and mathematically verified 2D unfolded state reconstruction." />
+    <meta property="og:title" content="CubeNet Lab — Rubik's Cube Photo Recognition & 2D Layout" />
+    <meta property="og:description" content="Precision Rubik's Cube photo recognition and mathematically verified 2D unfolded state reconstruction." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f4f7fb" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('cubenet-lab-theme-v1');
+          var isDark =
+            saved === 'dark' ||
+            (saved !== 'light' &&
+              window.matchMedia &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            var m = document.querySelector('meta[name="theme-color"]');
+            if (m) m.setAttribute('content', '#090e1a');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
